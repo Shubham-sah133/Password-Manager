@@ -26,4 +26,19 @@ def random_password_generator():
 def save_passwords():
     with open("password.txt", "w") as file:
         for website, pwd in password.items():
-            file.write(f"{website}:{pwd}\n")      
+            file.write(f"{website}:{pwd}\n")
+
+while True:
+    print("\n---------------PASSWORD MANAGER APP---------------\n")
+    print("1 Save password")
+    print("2 View password")
+    print("3 Generate password")
+    print("4 Update password")
+    print("5 Exit")
+    try:
+        choice = int(input("Enter your choice: "))
+    except ValueError:
+        print("please enter a number between 1 to 5")
+        continue
+
+           
