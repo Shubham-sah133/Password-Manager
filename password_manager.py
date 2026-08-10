@@ -22,3 +22,8 @@ def random_password_generator():
     chars = string.ascii_letters + string.digits + "@#&^%$%&/-+"
     password = "".join(secrets.choice(chars) for _ in range(length))
     return password
+
+def save_passwords():
+    with open("password.txt", "w") as file:
+        for website, pwd in password.items():
+            file.write(f"{website}:{pwd}\n")      
