@@ -41,4 +41,9 @@ while True:
         print("please enter a number between 1 to 5")
         continue
 
-           
+if choice == 1:
+        website = input("Please Enter your ID: ")
+        pwd = input("please Enter your password : ")
+        password[website] = pwd # jao password mai or ish website ke key ke sath tum apni value add kar dho means password ko update kr dho
+        save_passwords()
+                   
