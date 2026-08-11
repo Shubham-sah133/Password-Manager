@@ -46,4 +46,10 @@ if choice == 1:
         pwd = input("please Enter your password : ")
         password[website] = pwd # jao password mai or ish website ke key ke sath tum apni value add kar dho means password ko update kr dho
         save_passwords()
-                   
+
+elif choice == 2:
+    if not password:
+        print("Not found any data")
+    else:
+        for website, pwd in password.items():
+            print(website, ":", pwd)
