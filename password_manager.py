@@ -53,3 +53,6 @@ elif choice == 2:
     else:
         for website, pwd in password.items():
             print(website, ":", pwd)
+
+elif choice == 3:
+    print("Generated password: ", random_password_generator())
