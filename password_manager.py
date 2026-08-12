@@ -69,3 +69,6 @@ elif choice == 4:
         print("Your password updated successfully 😊")
     else:
         print("Id not found")
+
+elif choice == 5:
+    break        
