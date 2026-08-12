@@ -56,3 +56,16 @@ elif choice == 2:
 
 elif choice == 3:
     print("Generated password: ", random_password_generator())
+
+elif choice == 4:
+    website = input("please enter the ID name first: ")
+
+    if website in password:
+        pwd = input("please enter your new password: ")
+
+        password[website] = pwd
+        save_passwords()
+
+        print("Your password updated successfully 😊")
+    else:
+        print("Id not found")
